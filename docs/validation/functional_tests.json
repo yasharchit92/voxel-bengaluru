@@ -1,0 +1,564 @@
+{
+ "date": "2026-11-13T08:11:43.614Z",
+ "browser": "Chromium headless shell (Playwright), software WebGL via SwiftShader",
+ "passed": 17,
+ "failed": 0,
+ "results": [
+  {
+   "name": "single file, no external src/href references",
+   "pass": true,
+   "detail": {
+    "bytes": 7166181,
+    "external": []
+   }
+  },
+  {
+   "name": "loads with network offline and makes no network requests",
+   "pass": true,
+   "detail": {
+    "requests": []
+   }
+  },
+  {
+   "name": "boot completes; landmarks, infrastructure and activity present",
+   "pass": true,
+   "detail": {
+    "landmarks": [
+     "vidhana",
+     "vikasa",
+     "highcourt",
+     "palace",
+     "chinnaswamy",
+     "kanteerava",
+     "kanteerava_indoor",
+     "ubcity",
+     "glasshouse",
+     "iskcon",
+     "wtc",
+     "townhall",
+     "basilica"
+    ],
+    "vehicles": 1200,
+    "peds": 300,
+    "instances": 286407
+   }
+  },
+  {
+   "name": "all 8 required presets (+ street level) exist, are distinct, inside the extent and centred on their anchor features",
+   "pass": true,
+   "detail": [
+    {
+     "i": 1,
+     "name": "Entire Bengaluru",
+     "target": [
+      0,
+      61.2,
+      0
+     ],
+     "inside": true
+    },
+    {
+     "i": 2,
+     "name": "Central · Cubbon Park & civic core",
+     "target": [
+      -281.2,
+      65.5,
+      -137.7
+     ],
+     "anchor": "cubbon",
+     "anchor_dist_m": 397,
+     "ok": true,
+     "inside": true
+    },
+    {
+     "i": 3,
+     "name": "Bellandur Lake & Outer Ring Road",
+     "target": [
+      568.1,
+      50.7,
+      302.5
+     ],
+     "anchor": "Bellandur Lake",
+     "anchor_dist_m": 0,
+     "ok": true,
+     "inside": true
+    },
+    {
+     "i": 4,
+     "name": "Whitefield tech corridor",
+     "target": [
+      1336,
+      55.1,
+      -150
+     ],
+     "anchor": "itpl",
+     "anchor_dist_m": 1106,
+     "ok": true,
+     "inside": true
+    },
+    {
+     "i": 5,
+     "name": "Koramangala & HSR Layout",
+     "target": [
+      129.3,
+      57.8,
+      456.1
+     ],
+     "inside": true
+    },
+    {
+     "i": 6,
+     "name": "Electronic City & Hosur Road",
+     "target": [
+      502.8,
+      67,
+      1345.4
+     ],
+     "anchor": "infosys",
+     "anchor_dist_m": 404,
+     "ok": true,
+     "inside": true
+    },
+    {
+     "i": 7,
+     "name": "Hebbal & the north",
+     "target": [
+      -188,
+      57,
+      -911.6
+     ],
+     "anchor": "Hebbal Lake",
+     "anchor_dist_m": 1827,
+     "ok": true,
+     "inside": true
+    },
+    {
+     "i": 8,
+     "name": "West · Rajajinagar – Vijayanagar",
+     "target": [
+      -723.8,
+      60.7,
+      -222.8
+     ],
+     "inside": true
+    },
+    {
+     "i": 9,
+     "name": "Street level · MG Road",
+     "target": [
+      -108,
+      63.5,
+      -104.7
+     ],
+     "inside": true
+    }
+   ]
+  },
+  {
+   "name": "north is up at heading 0, east is right; compass follows camera heading",
+   "pass": true,
+   "detail": {
+    "heading0": -8.44469708899878e-15,
+    "northDy": -94.8,
+    "eastDx": 137.1,
+    "heading90": 90,
+    "northDxAt90": -137.3,
+    "needle": "rotate(-90.6deg)"
+   }
+  },
+  {
+   "name": "controls: hide UI, freeze, day/evening, orbit/fly + WASD, labels, overlays, reset",
+   "pass": true,
+   "detail": {
+    "hideUI": true,
+    "showUI": true,
+    "vehiclesMove": true,
+    "freezeStops": true,
+    "unfreeze": true,
+    "evening": true,
+    "day": true,
+    "fly": true,
+    "flyMoves": true,
+    "orbit": true,
+    "labelsOff": true,
+    "bloomButton": true,
+    "buttons": "11/11",
+    "btn-roads": true,
+    "btn-metro": true,
+    "btn-bounds": true,
+    "reset": true
+   }
+  },
+  {
+   "name": "vehicles follow the road graph (>= 99 % on road/paved cells or on flyovers; none in lakes)",
+   "pass": true,
+   "detail": {
+    "n": 4800,
+    "onRoad": 4655,
+    "onPaved": 0,
+    "elevatedOrTunnel": 145,
+    "inBuilding": 0,
+    "inWater": 0,
+    "other": 0,
+    "left": 1557,
+    "twoWay": 1557,
+    "pctOnRoadOrStructure": 100
+   }
+  },
+  {
+   "name": "no vehicle inside a building cell",
+   "pass": true,
+   "detail": {
+    "inBuilding": 0,
+    "of": 4800
+   }
+  },
+  {
+   "name": "left-hand traffic on two-way roads",
+   "pass": true,
+   "detail": {
+    "left": 1557,
+    "twoWay": 1557
+   }
+  },
+  {
+   "name": "metro trains run only on lines operational on the reference date",
+   "pass": true,
+   "detail": {
+    "trainLines": [
+     "purple",
+     "green",
+     "yellow",
+     "pink"
+    ],
+    "trains": 40
+   }
+  },
+  {
+   "name": "infrastructure status: Purple/Green/Yellow/Pink(elevated) operational; Blue + Pink underground not operational",
+   "pass": true,
+   "detail": {
+    "trains": [
+     {
+      "line": "purple",
+      "s": 117.79224395751953,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 425.96417236328125,
+      "dir": 1
+     },
+     {
+      "line": "purple",
+      "s": 661.5465698242188,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 969.7193603515625,
+      "dir": 1
+     },
+     {
+      "line": "purple",
+      "s": 1205.3062744140625,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 1513.4703369140625,
+      "dir": 1
+     },
+     {
+      "line": "purple",
+      "s": 1749.0615234375,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 2057.2255859375,
+      "dir": 1
+     },
+     {
+      "line": "purple",
+      "s": 2292.816162109375,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 2600.9814453125,
+      "dir": 1
+     },
+     {
+      "line": "purple",
+      "s": 2836.571533203125,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 3144.73681640625,
+      "dir": 1
+     },
+     {
+      "line": "purple",
+      "s": 3380.326904296875,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 3688.4921875,
+      "dir": 1
+     },
+     {
+      "line": "purple",
+      "s": 3924.082275390625,
+      "dir": -1
+     },
+     {
+      "line": "purple",
+      "s": 4232.2646484375,
+      "dir": 1
+     },
+     {
+      "line": "green",
+      "s": 102.8897476196289,
+      "dir": -1
+     },
+     {
+      "line": "green",
+      "s": 381.2566833496094,
+      "dir": 1
+     },
+     {
+      "line": "green",
+      "s": 587.0340576171875,
+      "dir": -1
+     },
+     {
+      "line": "green",
+      "s": 865.40185546875,
+      "dir": 1
+     },
+     {
+      "line": "green",
+      "s": 1071.3319091796875,
+      "dir": -1
+     },
+     {
+      "line": "green",
+      "s": 1349.542724609375,
+      "dir": 1
+     },
+     {
+      "line": "green",
+      "s": 1555.3289794921875,
+      "dir": -1
+     },
+     {
+      "line": "green",
+      "s": 1826.5836181640625,
+      "dir": 1
+     },
+     {
+      "line": "green",
+      "s": 2039.4737548828125,
+      "dir": -1
+     },
+     {
+      "line": "green",
+      "s": 2317.833984375,
+      "dir": 1
+     },
+     {
+      "line": "green",
+      "s": 2523.618896484375,
+      "dir": -1
+     },
+     {
+      "line": "green",
+      "s": 2801.979248046875,
+      "dir": 1
+     },
+     {
+      "line": "green",
+      "s": 3007.764404296875,
+      "dir": -1
+     },
+     {
+      "line": "green",
+      "s": 3286.12451171875,
+      "dir": 1
+     },
+     {
+      "line": "yellow",
+      "s": 132.35621643066406,
+      "dir": -1
+     },
+     {
+      "line": "yellow",
+      "s": 469.65606689453125,
+      "dir": 1
+     },
+     {
+      "line": "yellow",
+      "s": 734.3663330078125,
+      "dir": -1
+     },
+     {
+      "line": "yellow",
+      "s": 1071.6627197265625,
+      "dir": 1
+     },
+     {
+      "line": "yellow",
+      "s": 1336.3819580078125,
+      "dir": -1
+     },
+     {
+      "line": "yellow",
+      "s": 1668.947998046875,
+      "dir": 1
+     },
+     {
+      "line": "pink",
+      "s": 76.91999053955078,
+      "dir": -1
+     },
+     {
+      "line": "pink",
+      "s": 303.347412109375,
+      "dir": 1
+     },
+     {
+      "line": "pink",
+      "s": 457.18511962890625,
+      "dir": -1
+     },
+     {
+      "line": "pink",
+      "s": 683.613525390625,
+      "dir": 1
+     }
+    ],
+    "lines": [
+     {
+      "key": "purple",
+      "status": "operational",
+      "km": 43.5
+     },
+     {
+      "key": "green",
+      "status": "operational",
+      "km": 33.89
+     },
+     {
+      "key": "yellow",
+      "status": "operational",
+      "km": 18.06
+     },
+     {
+      "key": "pink",
+      "status": "operational",
+      "km": 7.61
+     }
+    ],
+    "uc": [
+     "construction/pink",
+     "proposed/?",
+     "construction/blue"
+    ],
+    "stations": {
+     "operational/green": 30,
+     "proposed/pink": 1,
+     "operational/pink": 6,
+     "operational/purple": 37,
+     "operational/yellow": 14,
+     "construction/blue": 1,
+     "construction/null": 2
+    },
+    "metroKm": {
+     "operational": 103.05625549316537,
+     "construction": 80.82685286072767
+    },
+    "ref": "2026-11-13",
+    "periph": [
+     [
+      "Kempegowda Intl Airport (KIA)",
+      6.8
+     ]
+    ]
+   }
+  },
+  {
+   "name": "KIA shown as peripheral marker, not inside the map",
+   "pass": true,
+   "detail": [
+    [
+     "Kempegowda Intl Airport (KIA)",
+     6.8
+    ]
+   ]
+  },
+  {
+   "name": "runtime landmark coordinates equal the manifest (max error < 1 m)",
+   "pass": true,
+   "detail": {
+    "n": 39,
+    "max_m": 0
+   }
+  },
+  {
+   "name": "no fantasy / placeholder labels in runtime data",
+   "pass": true,
+   "detail": {
+    "labels": 372,
+    "hits": []
+   }
+  },
+  {
+   "name": "no JS errors or console errors (session 1)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "deterministic: same seed -> identical geometry hash",
+   "pass": true,
+   "detail": {
+    "run1": [
+     3955321191,
+     [
+      3081621812,
+      19
+     ]
+    ],
+    "run2": [
+     3955321191,
+     [
+      3081621812,
+      19
+     ]
+    ]
+   }
+  },
+  {
+   "name": "seed changes only procedural detail; landmark positions are seed-independent",
+   "pass": true,
+   "detail": {
+    "seed1": [
+     3955321191,
+     [
+      3081621812,
+      19
+     ]
+    ],
+    "seed2": [
+     2237756140,
+     [
+      4094328676,
+      19
+     ]
+    ]
+   }
+  }
+ ]
+}

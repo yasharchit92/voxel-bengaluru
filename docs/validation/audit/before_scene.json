@@ -1,0 +1,785 @@
+{
+ "label": "before_scene",
+ "query": "norender=1&dynres=0&bloom=0",
+ "views": {
+  "0": {
+   "range": 6099.999999999999,
+   "by": {
+    "ground": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 460800,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 12.3
+    },
+    "plinth": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 7680,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "table": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 2,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "sky": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 528,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "far": {
+     "meshes": 887,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 20.7
+    },
+    "coarse": {
+     "meshes": 36,
+     "drawn": 36,
+     "tris": 359472,
+     "inst": 29956,
+     "shadowTris": 0,
+     "bytes": 2.3
+    },
+    "landmarks": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 6732,
+     "inst": 561,
+     "shadowTris": 6732,
+     "bytes": 0
+    },
+    "infra": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 547896,
+     "inst": 45658,
+     "shadowTris": 547896,
+     "bytes": 3.5
+    },
+    "LineSegments": {
+     "meshes": 5,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 2.6
+    },
+    "veh-scooter": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "veh-car": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "veh-auto": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "veh-bus": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "veh-van": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "veh-truck": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "metro-trains": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 14400,
+     "inst": 240,
+     "shadowTris": 14400,
+     "bytes": 0
+    },
+    "pedestrians": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "signs": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0.2
+    }
+   },
+   "geometryMB": 42.3,
+   "textureMB": 76.3,
+   "textures": [
+    [
+     "?",
+     3840,
+     3840,
+     75
+    ],
+    [
+     "?",
+     1024,
+     256,
+     1.3
+    ]
+   ],
+   "shadowMapMB": 16,
+   "pixelRatio": 1,
+   "cfg": {
+    "maxVehicles": 3500,
+    "maxPeds": 900,
+    "name": "normal",
+    "pr": 1,
+    "shadows": true,
+    "shadowSize": 2048,
+    "lodRadius": 380,
+    "lodCut": 1300,
+    "coarseDist": 3000,
+    "lifeCut": 1500,
+    "vehicles": 3500,
+    "peds": 900,
+    "aniso": 8,
+    "bloom": true,
+    "msaa": 4
+   }
+  },
+  "1": {
+   "range": 330.0000000000001,
+   "by": {
+    "ground": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 460800,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 12.3
+    },
+    "plinth": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 7680,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "table": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 2,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "sky": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 528,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "far": {
+     "meshes": 887,
+     "drawn": 39,
+     "tris": 268584,
+     "inst": 22382,
+     "shadowTris": 2858820,
+     "bytes": 20.7
+    },
+    "coarse": {
+     "meshes": 36,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 2.3
+    },
+    "near": {
+     "meshes": 44,
+     "drawn": 32,
+     "tris": 2551488,
+     "inst": 212624,
+     "shadowTris": 3529092,
+     "bytes": 22.5
+    },
+    "landmarks": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 6732,
+     "inst": 561,
+     "shadowTris": 6732,
+     "bytes": 0
+    },
+    "infra": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 547896,
+     "inst": 45658,
+     "shadowTris": 547896,
+     "bytes": 3.5
+    },
+    "LineSegments": {
+     "meshes": 5,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 2.6
+    },
+    "veh-scooter": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 86820,
+     "inst": 1447,
+     "shadowTris": 86820,
+     "bytes": 0.1
+    },
+    "veh-car": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 83952,
+     "inst": 1166,
+     "shadowTris": 83952,
+     "bytes": 0.1
+    },
+    "veh-auto": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 32616,
+     "inst": 453,
+     "shadowTris": 32616,
+     "bytes": 0
+    },
+    "veh-bus": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 15936,
+     "inst": 166,
+     "shadowTris": 15936,
+     "bytes": 0
+    },
+    "veh-van": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 16128,
+     "inst": 192,
+     "shadowTris": 16128,
+     "bytes": 0
+    },
+    "veh-truck": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 6384,
+     "inst": 76,
+     "shadowTris": 6384,
+     "bytes": 0
+    },
+    "metro-trains": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 14400,
+     "inst": 240,
+     "shadowTris": 14400,
+     "bytes": 0
+    },
+    "pedestrians": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 21576,
+     "inst": 899,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "signs": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 1418,
+     "inst": 709,
+     "shadowTris": 0,
+     "bytes": 0.2
+    }
+   },
+   "geometryMB": 64.8,
+   "textureMB": 76.3,
+   "textures": [
+    [
+     "?",
+     3840,
+     3840,
+     75
+    ],
+    [
+     "?",
+     1024,
+     256,
+     1.3
+    ]
+   ],
+   "shadowMapMB": 16,
+   "pixelRatio": 1,
+   "cfg": {
+    "maxVehicles": 3500,
+    "maxPeds": 900,
+    "name": "normal",
+    "pr": 1,
+    "shadows": true,
+    "shadowSize": 2048,
+    "lodRadius": 380,
+    "lodCut": 1300,
+    "coarseDist": 3000,
+    "lifeCut": 1500,
+    "vehicles": 3500,
+    "peds": 900,
+    "aniso": 8,
+    "bloom": true,
+    "msaa": 4
+   }
+  },
+  "2": {
+   "range": 780,
+   "by": {
+    "ground": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 460800,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 12.3
+    },
+    "plinth": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 7680,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "table": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 2,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "sky": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 528,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "far": {
+     "meshes": 887,
+     "drawn": 90,
+     "tris": 513576,
+     "inst": 42798,
+     "shadowTris": 2910312,
+     "bytes": 20.7
+    },
+    "coarse": {
+     "meshes": 36,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 2.3
+    },
+    "near": {
+     "meshes": 43,
+     "drawn": 43,
+     "tris": 3241260,
+     "inst": 270105,
+     "shadowTris": 3241260,
+     "bytes": 20.6
+    },
+    "landmarks": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 6732,
+     "inst": 561,
+     "shadowTris": 6732,
+     "bytes": 0
+    },
+    "infra": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 547896,
+     "inst": 45658,
+     "shadowTris": 547896,
+     "bytes": 3.5
+    },
+    "LineSegments": {
+     "meshes": 5,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 2.6
+    },
+    "veh-scooter": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 85260,
+     "inst": 1421,
+     "shadowTris": 85260,
+     "bytes": 0.1
+    },
+    "veh-car": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 80496,
+     "inst": 1118,
+     "shadowTris": 80496,
+     "bytes": 0.1
+    },
+    "veh-auto": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 35496,
+     "inst": 493,
+     "shadowTris": 35496,
+     "bytes": 0
+    },
+    "veh-bus": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 18336,
+     "inst": 191,
+     "shadowTris": 18336,
+     "bytes": 0
+    },
+    "veh-van": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 18648,
+     "inst": 222,
+     "shadowTris": 18648,
+     "bytes": 0
+    },
+    "veh-truck": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 4620,
+     "inst": 55,
+     "shadowTris": 4620,
+     "bytes": 0
+    },
+    "metro-trains": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 14400,
+     "inst": 240,
+     "shadowTris": 14400,
+     "bytes": 0
+    },
+    "pedestrians": {
+     "meshes": 1,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "signs": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 760,
+     "inst": 380,
+     "shadowTris": 0,
+     "bytes": 0.2
+    }
+   },
+   "geometryMB": 62.9,
+   "textureMB": 76.3,
+   "textures": [
+    [
+     "?",
+     3840,
+     3840,
+     75
+    ],
+    [
+     "?",
+     1024,
+     256,
+     1.3
+    ]
+   ],
+   "shadowMapMB": 16,
+   "pixelRatio": 1,
+   "cfg": {
+    "maxVehicles": 3500,
+    "maxPeds": 900,
+    "name": "normal",
+    "pr": 1,
+    "shadows": true,
+    "shadowSize": 2048,
+    "lodRadius": 380,
+    "lodCut": 1300,
+    "coarseDist": 3000,
+    "lifeCut": 1500,
+    "vehicles": 3500,
+    "peds": 900,
+    "aniso": 8,
+    "bloom": true,
+    "msaa": 4
+   }
+  },
+  "8": {
+   "range": 36.00000000000001,
+   "by": {
+    "ground": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 460800,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 12.3
+    },
+    "plinth": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 7680,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "table": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 2,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "sky": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 528,
+     "inst": 1,
+     "shadowTris": 0,
+     "bytes": 0
+    },
+    "far": {
+     "meshes": 887,
+     "drawn": 165,
+     "tris": 522756,
+     "inst": 43563,
+     "shadowTris": 2863104,
+     "bytes": 20.7
+    },
+    "coarse": {
+     "meshes": 36,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 2.3
+    },
+    "near": {
+     "meshes": 47,
+     "drawn": 16,
+     "tris": 1302420,
+     "inst": 108535,
+     "shadowTris": 3795792,
+     "bytes": 24.2
+    },
+    "landmarks": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 6732,
+     "inst": 561,
+     "shadowTris": 6732,
+     "bytes": 0
+    },
+    "infra": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 547896,
+     "inst": 45658,
+     "shadowTris": 547896,
+     "bytes": 3.5
+    },
+    "LineSegments": {
+     "meshes": 5,
+     "drawn": 0,
+     "tris": 0,
+     "inst": 0,
+     "shadowTris": 0,
+     "bytes": 2.6
+    },
+    "veh-scooter": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 29520,
+     "inst": 492,
+     "shadowTris": 29520,
+     "bytes": 0.1
+    },
+    "veh-car": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 29448,
+     "inst": 409,
+     "shadowTris": 29448,
+     "bytes": 0.1
+    },
+    "veh-auto": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 10872,
+     "inst": 151,
+     "shadowTris": 10872,
+     "bytes": 0
+    },
+    "veh-bus": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 6528,
+     "inst": 68,
+     "shadowTris": 6528,
+     "bytes": 0
+    },
+    "veh-van": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 7056,
+     "inst": 84,
+     "shadowTris": 7056,
+     "bytes": 0
+    },
+    "veh-truck": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 1764,
+     "inst": 21,
+     "shadowTris": 1764,
+     "bytes": 0
+    },
+    "metro-trains": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 14400,
+     "inst": 240,
+     "shadowTris": 14400,
+     "bytes": 0
+    },
+    "pedestrians": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 19080,
+     "inst": 795,
+     "shadowTris": 0,
+     "bytes": 0.1
+    },
+    "signs": {
+     "meshes": 1,
+     "drawn": 1,
+     "tris": 1918,
+     "inst": 959,
+     "shadowTris": 0,
+     "bytes": 0.2
+    }
+   },
+   "geometryMB": 66.5,
+   "textureMB": 76.3,
+   "textures": [
+    [
+     "?",
+     3840,
+     3840,
+     75
+    ],
+    [
+     "?",
+     1024,
+     256,
+     1.3
+    ]
+   ],
+   "shadowMapMB": 16,
+   "pixelRatio": 1,
+   "cfg": {
+    "maxVehicles": 3500,
+    "maxPeds": 900,
+    "name": "normal",
+    "pr": 1,
+    "shadows": true,
+    "shadowSize": 2048,
+    "lodRadius": 380,
+    "lodCut": 1300,
+    "coarseDist": 3000,
+    "lifeCut": 1500,
+    "vehicles": 3500,
+    "peds": 900,
+    "aniso": 8,
+    "bloom": true,
+    "msaa": 4
+   }
+  }
+ },
+ "errors": [],
+ "pan": {
+  "frames": 500,
+  "p50": 1.5,
+  "p90": 3.8,
+  "p99": 8.6,
+  "max": 27.3,
+  "over16": 2,
+  "over33": 0,
+  "cityAvg": 0.56,
+  "pendingAtEnd": 0,
+  "sections": {
+   "life": 0.84,
+   "city": 0.56,
+   "render": 0.21,
+   "labels": 0.21,
+   "hud": 0.03
+  }
+ }
+}

@@ -1,0 +1,24 @@
+// Usage: node tests/shot.mjs <out.png> [preset index | "x,z,dist,az,el"] [night=0|1] [query] [settleFrames]
+import { chromium } from '/home/user/.cache/vb/node_modules/playwright/index.mjs';
+import path from 'path'; import { fileURLToPath } from 'url';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const [out = 'shot.png', view = '0', night = '0', query = '', settle = '3'] = process.argv.slice(2);
+const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--enable-webgl'] });
+const ctx = await browser.newContext({ viewport: { width: +(process.env.W || 1600), height: +(process.env.H || 900) }, offline: true });
+const page = await ctx.newPage(); const errs = [];
+page.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') errs.push(m.type() + ': ' + m.text()); });
+page.on('pageerror', e => errs.push('pageerror: ' + e.message));
+const t0 = Date.now();
+await page.goto('file://' + root + '/voxel-bengaluru.html?dynres=0&' + query);
+await page.waitForFunction(() => window.VB && (VB.api && VB.api.ready || (VB.errors && VB.errors.length)), null, { timeout: 240000 });
+console.log('ready in', Date.now() - t0, 'ms');
+await page.evaluate(([view, night]) => { if (view.includes(',')) { const [x, z, d, az, el] = view.split(',').map(Number); VB.app.setView(x, z, d, az, el, 0); } else VB.app.goPreset(+view, 0); if (night === '1') { VB.app.setNight(true); VB.env.apply(1); } }, [view, night]);
+const f0 = await page.evaluate(() => VB.app.frames); const t1 = Date.now();
+await page.waitForFunction((n) => VB.api.stats().pending === 0 && VB.app.frames >= n, f0 + (+settle), { timeout: 600000, polling: 500 }).catch(() => console.log('settle timeout'));
+const f1 = await page.evaluate(() => { VB.app.paused = !!window.__pause; return VB.app.frames; });
+console.log('frames', f1 - f0, 'in', Date.now() - t1, 'ms');
+await page.waitForTimeout(800);
+console.log(JSON.stringify(await page.evaluate(() => ({ s: VB.api.stats(), e: VB.errors || [] }))));
+await page.screenshot({ path: out, timeout: 500000 });
+console.log('errors:', JSON.stringify(errs.slice(0, 12)));
+await browser.close();

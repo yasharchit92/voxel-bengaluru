@@ -1,0 +1,520 @@
+{
+ "generated": "2026-11-13",
+ "origin_check": {
+  "pipeline": [
+   784245.8299329435,
+   1434724.0328958824
+  ],
+  "independent": [
+   784245.83,
+   1434724.03
+  ]
+ },
+ "A_projection_residual_m": {
+  "all": {
+   "n": 412,
+   "mean": 0.367,
+   "median": 0.396,
+   "p90": 0.555,
+   "max": 0.693,
+   "rmse": 0.402
+  },
+  "by_group": {
+   "landmarks": {
+    "n": 39,
+    "mean": 0.055,
+    "median": 0.053,
+    "p90": 0.092,
+    "max": 0.108,
+    "rmse": 0.061
+   },
+   "lakes": {
+    "n": 164,
+    "mean": 0.413,
+    "median": 0.445,
+    "p90": 0.566,
+    "max": 0.635,
+    "rmse": 0.433
+   },
+   "parks": {
+    "n": 40,
+    "mean": 0.399,
+    "median": 0.388,
+    "p90": 0.617,
+    "max": 0.677,
+    "rmse": 0.42
+   },
+   "places": {
+    "n": 53,
+    "mean": 0.388,
+    "median": 0.396,
+    "p90": 0.545,
+    "max": 0.673,
+    "rmse": 0.411
+   },
+   "metro_stations": {
+    "n": 91,
+    "mean": 0.395,
+    "median": 0.417,
+    "p90": 0.557,
+    "max": 0.693,
+    "rmse": 0.42
+   },
+   "rail_stations": {
+    "n": 25,
+    "mean": 0.347,
+    "median": 0.364,
+    "p90": 0.552,
+    "max": 0.575,
+    "rmse": 0.374
+   }
+  },
+  "note": "independent Krueger-series TM vs. pyproj-derived scene coordinates stored in the manifest; residual includes the 0.01-0.1 unit rounding of stored scene coordinates"
+ },
+ "B_vs_wikipedia": {
+  "rows": [
+   {
+    "group": "landmarks",
+    "key": "vidhana",
+    "wikipedia_title": "Vidhana Soudha",
+    "type": "building",
+    "src_lon": 77.590653,
+    "src_lat": 12.979714,
+    "ref_lon": 77.5906,
+    "ref_lat": 12.9796,
+    "ref_decimals": 4,
+    "error_m": 13.9,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "vikasa",
+    "wikipedia_title": "Vikasa Soudha",
+    "type": "building",
+    "src_lon": 77.589298,
+    "src_lat": 12.978317,
+    "ref_lon": 77.5893,
+    "ref_lat": 12.9783,
+    "ref_decimals": 4,
+    "error_m": 1.9,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "highcourt",
+    "wikipedia_title": "Karnataka High Court",
+    "type": "building",
+    "src_lon": 77.592613,
+    "src_lat": 12.977905,
+    "ref_lon": 77.5926,
+    "ref_lat": 12.9779,
+    "ref_decimals": 4,
+    "error_m": 1.5,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "chinnaswamy",
+    "wikipedia_title": "M. Chinnaswamy Stadium",
+    "type": "building",
+    "src_lon": 77.599593,
+    "src_lat": 12.978822,
+    "ref_lon": 77.59944444,
+    "ref_lat": 12.97888889,
+    "ref_decimals": 8,
+    "error_m": 17.7,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "kanteerava",
+    "wikipedia_title": "Sree Kanteerava Stadium",
+    "type": "building",
+    "src_lon": 77.593477,
+    "src_lat": 12.969674,
+    "ref_lon": 77.5934,
+    "ref_lat": 12.9697,
+    "ref_decimals": 4,
+    "error_m": 8.8,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "ubcity",
+    "wikipedia_title": "UB City",
+    "type": "building",
+    "src_lon": 77.596035,
+    "src_lat": 12.972237,
+    "ref_lon": 77.59583333,
+    "ref_lat": 12.97175,
+    "ref_decimals": 5,
+    "error_m": 58.4,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "iskcon",
+    "wikipedia_title": "ISKCON Temple, Bengaluru",
+    "type": "building",
+    "src_lon": 77.551178,
+    "src_lat": 13.010087,
+    "ref_lon": 77.55109,
+    "ref_lat": 13.00981,
+    "ref_decimals": 5,
+    "error_m": 32.2,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "wtc",
+    "wikipedia_title": "World Trade Center Bengaluru",
+    "type": "building",
+    "src_lon": 77.556212,
+    "src_lat": 13.012312,
+    "ref_lon": 77.5562,
+    "ref_lat": 13.0123,
+    "ref_decimals": 4,
+    "error_m": 1.9,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "townhall",
+    "wikipedia_title": "Bengaluru Town Hall",
+    "type": "building",
+    "src_lon": 77.585794,
+    "src_lat": 12.963772,
+    "ref_lon": 77.58583333,
+    "ref_lat": 12.96361111,
+    "ref_decimals": 8,
+    "error_m": 18.4,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "basilica",
+    "wikipedia_title": "St. Mary's Basilica, Bengaluru",
+    "type": "building",
+    "src_lon": 77.60426,
+    "src_lat": 12.984404,
+    "ref_lon": 77.60388611,
+    "ref_lat": 12.98419444,
+    "ref_decimals": 8,
+    "error_m": 46.7,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "majestic_bus",
+    "wikipedia_title": "Kempegowda Bus Station",
+    "type": "building",
+    "src_lon": 77.572322,
+    "src_lat": 12.978062,
+    "ref_lon": 77.5726,
+    "ref_lat": 12.97679,
+    "ref_decimals": 4,
+    "error_m": 144.6,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "freedom",
+    "wikipedia_title": "Freedom Park, Bengaluru",
+    "type": "area",
+    "src_lon": 77.582033,
+    "src_lat": 12.977331,
+    "ref_lon": 77.58184444,
+    "ref_lat": 12.97727222,
+    "ref_decimals": 8,
+    "error_m": 21.5,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "cubbon",
+    "wikipedia_title": "Cubbon Park",
+    "type": "area",
+    "src_lon": 77.592437,
+    "src_lat": 12.974571,
+    "ref_lon": 77.59333333,
+    "ref_lat": 12.975,
+    "ref_decimals": 3,
+    "error_m": 108.2,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "lalbagh",
+    "wikipedia_title": "Lal Bagh",
+    "type": "area",
+    "src_lon": 77.585639,
+    "src_lat": 12.948587,
+    "ref_lon": 77.59,
+    "ref_lat": 12.95,
+    "ref_decimals": 2,
+    "error_m": 498.0,
+    "coarse_reference": true
+   },
+   {
+    "group": "landmarks",
+    "key": "iimb",
+    "wikipedia_title": "Indian Institute of Management Bangalore",
+    "type": "area",
+    "src_lon": 77.602419,
+    "src_lat": 12.895564,
+    "ref_lon": 77.60138889,
+    "ref_lat": 12.89527778,
+    "ref_decimals": 8,
+    "error_m": 116.1,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "manyata",
+    "wikipedia_title": "Manyata Embassy Business Park",
+    "type": "area",
+    "src_lon": 77.620367,
+    "src_lat": 13.047886,
+    "ref_lon": 77.6234169,
+    "ref_lat": 13.0502491,
+    "ref_decimals": 7,
+    "error_m": 422.1,
+    "coarse_reference": false
+   },
+   {
+    "group": "landmarks",
+    "key": "itpl",
+    "wikipedia_title": "International Tech Park, Bengaluru",
+    "type": "area",
+    "src_lon": 77.736652,
+    "src_lat": 12.984936,
+    "ref_lon": 77.73588333,
+    "ref_lat": 12.98563611,
+    "ref_decimals": 8,
+    "error_m": 114.0,
+    "coarse_reference": false
+   },
+   {
+    "group": "lakes",
+    "key": "Bellandur Lake",
+    "wikipedia_title": "Bellandur Lake",
+    "type": "area",
+    "src_lon": 77.672032,
+    "src_lat": 12.937145,
+    "ref_lon": 77.66277778,
+    "ref_lat": 12.93416667,
+    "ref_decimals": 8,
+    "error_m": 1056.2,
+    "coarse_reference": false
+   },
+   {
+    "group": "lakes",
+    "key": "Ulsoor Lake",
+    "wikipedia_title": "Ulsoor Lake",
+    "type": "area",
+    "src_lon": 77.619169,
+    "src_lat": 12.982549,
+    "ref_lon": 77.61921389,
+    "ref_lat": 12.98147222,
+    "ref_decimals": 8,
+    "error_m": 119.8,
+    "coarse_reference": false
+   },
+   {
+    "group": "lakes",
+    "key": "Hebbal Lake",
+    "wikipedia_title": "Hebbal Lake, Bengaluru",
+    "type": "area",
+    "src_lon": 77.586711,
+    "src_lat": 13.047161,
+    "ref_lon": 77.58694444,
+    "ref_lat": 13.04666667,
+    "ref_decimals": 8,
+    "error_m": 60.5,
+    "coarse_reference": false
+   },
+   {
+    "group": "lakes",
+    "key": "Madiwala Lake",
+    "wikipedia_title": "Madiwala Lake",
+    "type": "area",
+    "src_lon": 77.617735,
+    "src_lat": 12.908197,
+    "ref_lon": 77.61472222,
+    "ref_lat": 12.90583333,
+    "ref_decimals": 8,
+    "error_m": 419.2,
+    "coarse_reference": false
+   },
+   {
+    "group": "rail_stations",
+    "key": "Krishnarajapuram",
+    "wikipedia_title": "Krishnarajapuram railway station",
+    "type": "station",
+    "src_lon": 77.6754561,
+    "src_lat": 13.0005461,
+    "ref_lon": 77.67533,
+    "ref_lat": 13.00065,
+    "ref_decimals": 5,
+    "error_m": 17.9,
+    "coarse_reference": false
+   },
+   {
+    "group": "rail_stations",
+    "key": "Kengeri",
+    "wikipedia_title": "Kengeri railway station",
+    "type": "station",
+    "src_lon": 77.4837568,
+    "src_lat": 12.9176571,
+    "ref_lon": 77.4839,
+    "ref_lat": 12.9176,
+    "ref_decimals": 4,
+    "error_m": 16.8,
+    "coarse_reference": false
+   },
+   {
+    "group": "rail_stations",
+    "key": "Yesvantpur Junction",
+    "wikipedia_title": "Yesvantpur Junction railway station",
+    "type": "station",
+    "src_lon": 77.5507701,
+    "src_lat": 13.0237734,
+    "ref_lon": 77.55,
+    "ref_lat": 13.02,
+    "ref_decimals": 2,
+    "error_m": 427.8,
+    "coarse_reference": true
+   },
+   {
+    "group": "rail_stations",
+    "key": "Bangalore Cantonment",
+    "wikipedia_title": "Bengaluru Cantonment railway station",
+    "type": "station",
+    "src_lon": 77.5980003,
+    "src_lat": 12.9936865,
+    "ref_lon": 77.59,
+    "ref_lat": 12.99,
+    "ref_decimals": 2,
+    "error_m": 958.9,
+    "coarse_reference": true
+   },
+   {
+    "group": "peripheral",
+    "key": "Kempegowda Intl Airport (KIA)",
+    "wikipedia_title": "Kempegowda International Airport",
+    "type": "area",
+    "src_lon": 77.7068,
+    "src_lat": 13.1989,
+    "ref_lon": 77.70555556,
+    "ref_lat": 13.19888889,
+    "ref_decimals": 8,
+    "error_m": 134.7,
+    "coarse_reference": false
+   }
+  ],
+  "not_compared": [
+   [
+    "rail_stations",
+    "Sir M. Visvesvaraya Terminal",
+    "Sir M. Visvesvaraya Terminal",
+    "no manifest feature"
+   ]
+  ],
+  "stats_all_m": {
+   "n": 26,
+   "mean": 186.065,
+   "median": 60.5,
+   "p90": 498.0,
+   "max": 1056.2,
+   "rmse": 335.343
+  },
+  "stats_fine_reference_m": {
+   "n": 23,
+   "mean": 128.391,
+   "median": 46.7,
+   "p90": 419.2,
+   "max": 1056.2,
+   "rmse": 261.545
+  },
+  "stats_buildings_fine_reference_m": {
+   "n": 11,
+   "mean": 31.455,
+   "median": 17.7,
+   "p90": 58.4,
+   "max": 144.6,
+   "rmse": 50.874
+  },
+  "note": "Wikipedia coordinates are an independent but imprecise reference (area features are quoted at arbitrary interior points; some are rounded to 0.01 deg = ~1.1 km and are flagged coarse_reference). They test for gross misplacement, not metre accuracy."
+ },
+ "C_raster_consistency": {
+  "lakes_ge_10ha_centroid_on_water_or_wetland": [
+   79,
+   79
+  ],
+  "metro_stations_within_60m_of_arterial_road_or_rail_cell": [
+   89,
+   91
+  ],
+  "rail_stations_within_50m_of_rail_cell": [
+   25,
+   25
+  ],
+  "park_landmarks_on_green_cells": [
+   4,
+   5
+  ],
+  "modelled_landmarks_footprint_cleared_of_generic_buildings": [
+   12,
+   13
+  ]
+ },
+ "D_null_test": {
+  "actual_median_error_m": 46.7,
+  "random_placement_median_error_m": {
+   "min": 10452,
+   "mean": 16196,
+   "max": 22031
+  },
+  "trials": 2000,
+  "n_features": 22,
+  "p_value_upper_bound": 0.0005,
+  "passed": true
+ },
+ "E_distortion": {
+  "points": {
+   "origin": {
+    "scale_east": 1.001888,
+    "scale_north": 0.995516,
+    "grid_north_offset_deg": -0.588211
+   },
+   "NW corner": {
+    "scale_east": 1.001754,
+    "scale_north": 0.995393,
+    "grid_north_offset_deg": -0.554015
+   },
+   "NE corner": {
+    "scale_east": 1.002038,
+    "scale_north": 0.995675,
+    "grid_north_offset_deg": -0.638708
+   },
+   "SW corner": {
+    "scale_east": 1.001748,
+    "scale_north": 0.995368,
+    "grid_north_offset_deg": -0.538915
+   },
+   "SE corner": {
+    "scale_east": 1.002032,
+    "scale_north": 0.995651,
+    "grid_north_offset_deg": -0.621301
+   }
+  },
+  "horizontal": "uniform 1 scene unit = 10 m grid distance; no rubber-sheeting, no selective enlargement of districts or landmarks footprints",
+  "vertical": {
+   "terrain_exaggeration": 3.0,
+   "building_height_exaggeration": 1.5,
+   "vehicle_size_exaggeration": 1.6,
+   "traffic_time_lapse": 2.0
+  },
+  "note": "scale vs. spherical haversine (mean radius) so north/east differ by ellipsoid flattening terms of ~0.3 %; UTM grid scale itself is ~1.0006 here (0.6 m per km)"
+ }
+}
